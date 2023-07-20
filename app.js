@@ -14,7 +14,7 @@ const checkProductDetails = async (productLink) => {
     const url = await getURL(productLink);
 
     browser = await puppeteer.launch({
-      headless: "new",
+      headless: "true",
     });
     console.log("browser opened");
     const page = await browser.newPage();
